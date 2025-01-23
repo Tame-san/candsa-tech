@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CANDSA Tech | Leading Technology Integrations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
         .container { width: 80%; margin: 0 auto; }
         header { background-color: #333; color: white; padding: 20px 0; text-align: center; }
         nav ul { list-style: none; padding: 0; }
@@ -13,13 +16,20 @@
         nav ul li a { color: white; text-decoration: none; }
         .hero { background-image: url('images/integration-image.jpeg'); background-size: cover; padding: 100px 0; text-align: center; color: white; }
         .hero h1 { margin: 0; font-size: 3em; }
+        .hero p { font-size: 1.5em; }
         .content { padding: 20px 0; }
         .content h2 { color: #333; }
         .content p { line-height: 1.6; }
         footer { background-color: #333; color: white; text-align: center; padding: 10px 0; margin-top: 20px; }
+        .rounded-img { border-radius: 15px; }
     </style>
 </head>
 <body>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <header>
         <div class="container">
             <h1>CANDSA Tech</h1>
@@ -43,6 +53,7 @@
     <div class="content container">
         <section id="about">
             <h2>About Us</h2>
+            <img src="about-us.jpg" alt="About Us" class="img-fluid rounded-img">
             <p>With Cloud Certifications and almost a decade of experience within the Tech industry, CANDSA Tech specializes in marketing integrations. We pride ourselves in simplifying logistics and processes for companies, while providing competitive pricing and well-optimized solutions for the best value and performance.</p>
         </section>
 
@@ -60,8 +71,8 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Reach out to us for more information and to start collaborating.</p>
-            <p>Email: <a href="mailto:t.netshilema@gmail.com">info@candsatech.com</a></p>
-            <p>Phone: +27 76 226 6121</p>
+            <p>Email: <a href="mailto:info@candsatech.com">info@candsatech.com</a></p>
+            <p>Phone: +27 11 123 4567</p>
         </section>
     </div>
 
@@ -70,3 +81,15 @@
             <p>&copy; 2025 CANDSA Tech. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript for Motion -->
+    <script>
+        // Example of a simple fade-in effect
+        window.addEventListener('load', function() {
+            document.querySelector('.hero').style.opacity = 0;
+            setTimeout(() => {
+                document.querySelector('.hero').style.transition = 'opacity 1s ease-in-out';
+                document.querySelector('.hero').style.opacity = 1;
+            }, 500);
+        });
+    </script>
